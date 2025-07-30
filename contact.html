@@ -1,45 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Contact page of Anointed Fitness">
   <title>Contact - Anointed Fitness</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
+  <a href="index.html"><img src="images/logo.png" alt="Anointed Fitness Logo" class="site-logo"></a>
+
     <h1>Contact</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="mindset.html">Mindset</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="workouts.html">Workouts</a></li>
-    <li><a href="nutrition.html">Nutrition</a></li>
-    <li><a href="mindset.html">Mindset</a></li>
-    <li><a href="tools.html">Tools</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
 
   <main>
-    
-<form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email"><br>
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="message"></textarea><br>
-  <input type="submit" value="Send">
-</form>
+    <section>
+      <h2>Reach Out</h2>
+      <p>Whether it’s a quick question, feedback, or interest in working together, we’d love to hear from you. Use the form below to send us a message.</p>
+    </section>
+
+    <section>
+      <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+        <input type="submit" value="Send" class="cta-button">
+      </form>
+    </section>
+
+    <img src="images/home2.jpg" alt="Contact visual" style="width:50%;max-width:400px;margin:1rem auto;">
 
   </main>
-  
-<footer>
-  <p>&copy; 2025 Anointed Fitness | Built for PROG1836</p>
-</footer>
 
+  <footer>
+    <p>&copy; 2025 Anointed Fitness | Built for PROG1836</p>
+  </footer>
 </body>
 </html>

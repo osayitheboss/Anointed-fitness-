@@ -1,40 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Beginner fitness tips, workouts, and mental wellness for young adults.">
   <title>Anointed Fitness - Home</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
+  <a href="index.html"><img src="images/logo.png" alt="Anointed Fitness Logo" class="site-logo"></a>
+
     <h1>Anointed Fitness</h1>
-    <p>Beginner-friendly fitness from home</p>
+    <p>Beginner-Friendly Fitness. Built for Growth.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="mindset.html">Mindset</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="workouts.html">Workouts</a></li>
-    <li><a href="nutrition.html">Nutrition</a></li>
-    <li><a href="mindset.html">Mindset</a></li>
-    <li><a href="tools.html">Tools</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
 
-  <main><main>
-    <section>
+  <main>
+    <section class="fade-in">
       <h2>Welcome</h2>
-      <img src="images/beach.jpg" alt="Beach motivation" style="width:100%;max-height:400px;object-fit:cover;">
-      <p>This site is for anyone looking to start their fitness journey at home without needing a gym. Whether you're a student or just getting started, we got you.</p>
+      <p>Anointed Fitness is more than a website — it’s your digital gym, wellness coach, and accountability buddy all in one. This platform is built to help beginners take their first steps into fitness, nutrition, and mindful living with ease and confidence.</p>
+      <img src="images/home2.jpg" alt="Outdoor lifestyle" style="width:100%;max-width:800px;">
     </section>
-  </main></main>
-  
-<footer>
-  <p>&copy; 2025 Anointed Fitness | Built for PROG1836</p>
-</footer>
 
+    <section class="fade-in">
+      <h2>Why We Exist</h2>
+      <p>We know starting is hard. That’s why we’ve created this space — where information is clear, workouts are simple, and food plans are easy to follow. No fluff. No guilt. Just facts, support, and steady progress. You’re not alone in this.</p>
+      <img src="images/beach.jpg" alt="Motivation on beach" style="width:100%;max-width:800px;">
+    </section>
+
+    <section class="fade-in">
+      <h2>What You’ll Find</h2>
+      <ul>
+        <li>✔️ Beginner to advanced home workouts</li>
+        <li>✔️ Budget-friendly meals and macro tips</li>
+        <li>✔️ Motivation for when you feel like giving up</li>
+        <li>✔️ Calculators, trackers, and printable tools</li>
+        <li>✔️ Real blog stories, no fake influencer vibes</li>
+      </ul>
+      <a href="workouts.html" class="cta-button">Get Started</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anointed Fitness | Built for PROG1836</p>
+  </footer>
 </body>
 </html>

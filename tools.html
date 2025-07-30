@@ -1,38 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Tools page of Anointed Fitness">
   <title>Tools - Anointed Fitness</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function calculateBMI() {
+      var weight = parseFloat(document.getElementById('weight').value);
+      var height = parseFloat(document.getElementById('height').value) / 100;
+      var bmi = weight / (height * height);
+      document.getElementById('bmi-result').innerText = 'Your BMI: ' + bmi.toFixed(1);
+    }
+  </script>
 </head>
 <body>
   <header>
+  <a href="index.html"><img src="images/logo.png" alt="Anointed Fitness Logo" class="site-logo"></a>
+
     <h1>Tools</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="mindset.html">Mindset</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="workouts.html">Workouts</a></li>
-    <li><a href="nutrition.html">Nutrition</a></li>
-    <li><a href="mindset.html">Mindset</a></li>
-    <li><a href="tools.html">Tools</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
 
-  <main><main>
-    <h2>Tools</h2>
-    <p>Download our printable progress tracker to stay on top of your fitness goals.</p>
-    <img src="images/bear-hike.jpg" alt="Man hiking with a bear behind him" style="width:100%;max-width:800px;">
-    <p><em>Stay ahead of your goals... or they might catch up to you 🐻</em></p>
-  </main></main>
-  
-<footer>
-  <p>&copy; 2025 Anointed Fitness | Built for PROG1836</p>
-</footer>
+  <main>
+    <section>
+      <h2>Track Your Progress</h2>
+      <p>Use the simple tools below to calculate your BMI and record your weekly progress. These resources help you stay consistent, reflect on how far you've come, and set better goals.</p>
+    </section>
 
+    <img src="images/bear-hike.jpg" alt="Tracker visual" style="width:100%;max-width:800px;margin:1rem 0;">
+
+    <section>
+      <h2>BMI Calculator</h2>
+      <p>Enter your height (cm) and weight (kg):</p>
+      <input type="number" id="height" placeholder="Height in cm">
+      <input type="number" id="weight" placeholder="Weight in kg">
+      <button onclick="calculateBMI()">Calculate BMI</button>
+      <p id="bmi-result"></p>
+    </section>
+
+    <section>
+      <h2>Weekly Tracker</h2>
+      <table>
+        <tr><th>Week</th><th>Weight (kg)</th><th>Workout Count</th><th>Notes</th></tr>
+        <tr><td>Week 1</td><td>--</td><td>--</td><td>--</td></tr>
+        <tr><td>Week 2</td><td>--</td><td>--</td><td>--</td></tr>
+        <tr><td>Week 3</td><td>--</td><td>--</td><td>--</td></tr>
+        <tr><td>Week 4</td><td>--</td><td>--</td><td>--</td></tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anointed Fitness | Built for PROG1836</p>
+  </footer>
 </body>
 </html>
